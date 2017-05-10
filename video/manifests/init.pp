@@ -1,9 +1,9 @@
 class video {
 
 
-$packages = ['guvcview','blender', 'openshot','recordmydesktop']
+$packages = ['guvcview','blender', 'openshot','kazam']
 package {$packages:
- ensure => "installed"
+ ensure => "installed", allowcdrom => "true"
 }
 
 }
